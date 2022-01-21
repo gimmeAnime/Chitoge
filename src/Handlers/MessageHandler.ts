@@ -280,6 +280,14 @@ export default class MessageHandler {
           },
         }
       );
+      return void (await this.client.sendMessage(
+        M.from,
+        buffer,
+        MessageType.image,
+        {
+          caption: `A wild pokemon appeared! Use ${this.client.config.prefix}catch <pokemon_name> to catch this pokemon.`,
+        }
+      ));
     });
   };
 
