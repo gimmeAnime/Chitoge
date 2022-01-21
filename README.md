@@ -9,41 +9,43 @@
 
 > A Fully Modular and Efficient Bot <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/ShineiIchijo/Chitoge/blob/main)
+
 
 </div><br/>
 <br/>
 
 ## ✨ Highlights
 
-- Fully Modular Design
-- Object Oriented
-- Written in [TypeScript](https://www.typescriptlang.org/)
-- Self-Restoring Auth
-- Built with [Baileys](https://github.com/adiwajshing/baileys) (The Best
-  WhatsApp Library Out There)
+-   Fully Modular Design
+-   Object Oriented
+-   Written in [TypeScript](https://www.typescriptlang.org/)
+-   Self-Restoring Auth
+-   Built with [Baileys](https://github.com/adiwajshing/baileys) (The Best
+    WhatsApp Library Out There)
 
 ## 💻 Deploy/Hosting Guide
 
-- Section Moved to
-  [Chitoge-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
+-   Section Moved to
+    [Chitoge-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
-- To view all features, click
-  here➡️[Chitoge_featuresList.md](https://github.com/ShineiIchijo/Chitoge/blob/main/Features.md)
+-   To view all features, click
+    here➡️[Chitoge_featuresList.md](https://github.com/ShineiIchijo/Chitoge/blob/main/Features.md)
 
 ## 💪 Contribution
 
-- Feel free to open issues regarding any problems or if you have any feature requests
-- Make sure to follow the ESLint Rules while editing the code and run
-  `yarn run prettier-format` before opening PRs
+-   Feel free to open issues regarding any problems or if you have any feature requests
+-   Make sure to follow the ESLint Rules while editing the code and run
+    `yarn run prettier-format` before opening PRs
 
-## 🚀 Our Amazing Contributors
+##  🚀 Our Amazing Contributors
 
 <a href="https://github.com/ShineiIchijo/Chitoge/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ShineiIchijo/Chitoge" />
 </a>
+
 
 ### 🟢 WhatsApp Group
 
@@ -55,5 +57,5 @@ Distributed under the GNU AFFERO GENERAL PUBLIC License. See [LICENSE](/LICENSE)
 for more information.
 
 ## 🎗Help
-
 Please give this repo a ⭐ if it helped you.
+ 

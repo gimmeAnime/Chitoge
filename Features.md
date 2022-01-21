@@ -1,9 +1,3 @@
-|Admin| usage | 
-|------|--------| 
-|Promote |  Makes user admin      | 
-|Demote |Removes user adminship  |
-| Remove | remove user |  
-
 |Media| usage | 
 |----|--------| 
 |Lyrics| Gives you the lyrics of the given song|
@@ -25,22 +19,33 @@
 |----|--------|
 |Triggered| Tag a photo while commanding, given image would be triggered xD|
 |Chess| Launches a game of chess straight in the group chat, YES THIS IS THE FUTURE! EMBRACE IT!|
+| Reaction  | React using Pat,Hug, ... |
+| Ship      | Ship People              |
+| Triggered | Triggered Sticker        |
+| Why       | Asks you a why question  |
+| Chat      | Chats with user in group |
 
 |Misc| usage|
 |----|--------|
-|Delete| Deletes the quoted message, admin only feature|
 |Hi| WELL|
-|Chitoge| View info :v|
+|Chitoge| Views info :v|
+|Retrieve| Retrieve viewOnceMessage WhatsApp Message|
 
 |Moderation| usage|
 |----|--------|
-Activate| Activates certain bot features in a group chat|
+|Activate| Activates certain bot features in a group chat|
 |Deactivate| Deactivates certain bot features in a group chat|
+|Delete| Deletes the quoted message, admin only feature|
 |Everyone| Tags all participants of the given group|
 |Promote| Promotes the tagged user as a admin on group chat, can be executed only if the one commanding is group admin|
 |Demote| Demotes the tagged user as a standard participant from an admin if he's one. Can work only when commanding user is himself a group admin|
 |Remove| Removes the tagged user from the group, can only work if the bot is an admin and the one commanding this tool|
 
+|Nsfw| usage|
+|----|--------|
+|Nsfw-neko| Sends you random nsfw neko image|
+|Nsfw-waifu| Sends you random nsfw waifu image|
+|Trapped-waifu| Sends you random nsfw trapped waifu image|
 
 |Utils| usage|
 |----|--------|
@@ -51,8 +56,12 @@ Activate| Activates certain bot features in a group chat|
 
 |Weeb| usage|
 |----|--------|
+|Kitsune| Sends you random kitsune image|
 |Loli| Sends you random anime loli image|
+|Megumin-paper| Sends you random Megumin (From Konosuba) image|
 |Neko| Sends you random anime neko image|
+|Rpaper| Sends you random anime wallpaper|
+|Shinobu-paper| Sends you random Shinobu Oshino (From Bakemonogatari) image|
 |Waifu| Sends you random anime waifu image|
 
 |Dev| usage|
@@ -60,6 +69,27 @@ Activate| Activates certain bot features in a group chat|
 |Disable| Disables the specified bot command from being used in a group chat|
 |Enable| Enables the specified bot command so that it can be used again in a group chat|
 |Eval| Evaluates JavaScript|
-|Google| Searches the given title in google (GOOGLE_API_KEY required to perform this activity| 
+|Google| Searches the given title in google (GOOGLE_API_KEY required to perform this activity)| 
 |Ban| Bans the given user from using the bot|
 |Unban| Unbans the given user, after this he/she can use the bot again|
+|Status| Updates status u like|
+
+| Bot      | usage                                 |
+| -------- | ------------------------------------- |
+| Entropy  | Gives you info about the Entropy Bot  |
+| Guide    | List of Guides to Use and Deploy Kaoi |
+| Infinity | Gives you info about the Infinity Bot |
+| Kaoi     | Gives you info about the Kaoi Bot     |
+| Void     | Gives you info about the Void Bot     |
+
+| Config  | usage                       |
+| ------- | --------------------------- |
+| Enable  | Enables a command globally  |
+| Disable | Disables a command globally |
+
+| Educative | usage                   |
+| --------- | ----------------------- |
+| Crypto    | Sends you crypto values |
+| github | sends github account and repo link |
+| weather | sends you weather report of a place|
+| calculator | calculates equations |
