@@ -251,7 +251,7 @@ export default class MessageHandler {
   };
 
   spawnPokemon = async (): Promise<void> => {
-    cron.schdule("*/2 * * * *", async () => {
+    cron.schedule("*/2 * * * *", async () => {
       const groups = await (await this.client.getFeatures("wild")).jids;
       const p = Math.floor(Math.random() * groups.length);
       const Data = await this.client.getGroupData(groups[p]);
