@@ -71,7 +71,6 @@ const start = async () => {
         client.log("Cleared all Chats!");
       });
     }
-    messageHandler.spawnPokemon();
   });
 
   client.on("CB:Call", async (json) => {
@@ -104,5 +103,8 @@ db.once("open", () => {
   client.getAuthInfo(client.config.session).then((session) => {
     if (session) client.loadAuthInfo(session);
     start();
+  });
+  client.once("open", () => {
+    messageHandler.spawnPokemon();
   });
 });
