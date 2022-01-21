@@ -400,7 +400,7 @@ export default class MessageHandler {
           footerText: "🌠 Shooting Star 🌠",
           buttons: buttons,
           headerType: 4,
-          videoMessage: media?.message?.videoMessage,
+          imageMessage: media?.message?.imageMessage,
         };
         return void (await this.client.sendMessage(
           groups[0],
