@@ -98,6 +98,22 @@ export default class Command extends BaseCommand {
       { jid: M.from },
       { $set: { trade: false } }
     );
+    await this.client.DB.pokemons.updateOne(
+      { jid: M.sender.jid },
+      { $push: { pokemons: data.tOffer.name } }
+    );
+    await this.client.DB.pokemons.updateOne(
+      { jid: data.startedBy },
+      { $push: { pokemons: nAme } }
+    );
+    await this.client.DB.pokemons.updateOne(
+      { jid: M.sender.jid },
+      { $pull: { pokemons: nAme } }
+    );
+    await this.client.DB.pokemons.updateOne(
+      { jid: data.startedBy },
+      { $pull: { pokemons: data.tOffer.name } }
+    );
     return void M.reply(
       `🎊 *Trade Completed!* 🎊\n\n*${nAme}* -----> *@${
         data.startedBy.split("@")[0]

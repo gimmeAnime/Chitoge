@@ -33,6 +33,16 @@ export default class Command extends BaseCommand {
       return void M.reply(
         `🟨 *${this.client.util.capitalize(type)}* is already *disabled*, Baka!`
       );
+    if (type === "wild") {
+      await this.client.DB.group.updateOne(
+        { jid: M.from },
+        { $set: { wild: false } }
+      );
+      await this.client.DB.feature.updateOne(
+        { feature: "wild" },
+        { $pull: { jids: M.from } }
+      );
+    }
     await this.client.DB.group.updateOne(
       { jid: M.from },
       { $set: { [type]: false } }
