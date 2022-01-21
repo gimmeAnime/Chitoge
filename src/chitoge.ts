@@ -106,5 +106,6 @@ db.once("open", () => {
   });
   client.once("open", () => {
     messageHandler.spawnPokemon();
+    messageHandler.spawnCards();
   });
 });
