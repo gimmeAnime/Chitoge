@@ -1,17 +1,13 @@
 {
-  "compilerOptions": {            
-    "target": "ES6",                                
-    "module": "commonjs",                           
-    "lib": [
-      "ESNext"
-    ],                                   
-    "outDir": "./dist",                    
-    "strict": true,                                
-    "esModuleInterop": true,                        
-    "skipLibCheck": true,                          
-    "forceConsistentCasingInFileNames": true        
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "lib": ["ESNext"],
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }
