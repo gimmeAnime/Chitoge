@@ -8,7 +8,7 @@ import WAClient from "../lib/WAClient";
 import { ICommand, IParsedArgs, ISimplifiedMessage } from "../typings";
 import { MessageType } from "@adiwajshing/baileys";
 import { setTimeout } from "timers";
-//import { setIntervalAsync } from "set-interval-async/legacy";
+import cron from "node-cron";
 export default class MessageHandler {
   commands = new Map<string, ICommand>();
   aliases = new Map<string, ICommand>();
@@ -117,152 +117,6 @@ export default class MessageHandler {
         )} in ${chalk.cyanBright(groupMetadata?.subject || "")}`
       );
 
-    //cron.schedule("0 */5 * * * *", async () => {
-    /*if (
-        !(await this.client.getGroupData(M.from)).wild ||
-        this.client.user.name !==
-          (await (
-            await this.client.getGroupData(M.from)
-          ).bot)
-      )
-        return void null;
-      const i = Math.floor(Math.random() * 898);
-      const { data } = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon/${i}`
-      );
-      const buffer = await this.client.getBuffer(
-        `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
-      );
-      const o = "catchable";
-      const w = "lastPokemon";
-      const v = "pId";
-      const l = "pLevel";
-      const r = "pImage";
-      const y = Math.floor(Math.random() * 100);
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [o]: true } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [w]: data.name } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [v]: data.id } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [l]: y } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        {
-          $set: {
-            [r]: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
-          },
-        }
-      );
-      await this.client.sendMessage(M.from, buffer, MessageType.image, {
-        caption: `A wild Pokemon appeared. Use ${this.client.config.prefix}catch <pokemon_name> to catch it.`,
-      });
-    });*/
-    const h = [3600000, 1500000, 300000, 1020000, 1440000, 2220000, 4680000];
-    const z = h[Math.floor(Math.random() * h.length)];
-    setTimeout(async () => {
-      if (
-        !(await this.client.getGroupData(M.from)).wild ||
-        this.client.user.name !==
-          (await (
-            await this.client.getGroupData(M.from)
-          ).bot)
-      )
-        return void null;
-      const i = Math.floor(Math.random() * 898);
-      const { data } = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon/${i}`
-      );
-      const buffer = await this.client.getBuffer(
-        `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
-      );
-      const o = "catchable";
-      const w = "lastPokemon";
-      const v = "pId";
-      const l = "pLevel";
-      const r = "pImage";
-      const y = Math.floor(Math.random() * 100);
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [o]: true } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [w]: data.name } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [v]: data.id } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [l]: y } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        {
-          $set: {
-            [r]: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
-          },
-        }
-      );
-      await this.client.sendMessage(M.from, buffer, MessageType.image, {
-        caption: `A wild Pokemon appeared. Use ${this.client.config.prefix}catch <pokemon_name> to catch it.`,
-      });
-    }, z);
-    /*setIntervalAsync(async () => {
-      if (!(await this.client.getGroupData(M.from)).wild) return void null;
-      const i = Math.floor(Math.random() * 898);
-      const { data } = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon/${i}`
-      );
-      const buffer = await this.client.getBuffer(
-        `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
-      );
-      const o = "catchable";
-      const w = "lastPokemon";
-      const v = "pId";
-      const l = "pLevel";
-      const r = "pImage";
-      const y = Math.floor(Math.random() * 100);
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [o]: true } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [w]: data.name } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [v]: data.id } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { [l]: y } }
-      );
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        {
-          $set: {
-            [r]: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
-          },
-        }
-      );
-      await this.client.sendMessage(M.from, buffer, MessageType.image, {
-        caption: `A wild Pokemon appeared. Use ${this.client.config.prefix}catch <pokemon_name> to catch it.`,
-      });
-    }, 300000);*/
-
     const cmd = args[0].slice(this.client.config.prefix.length).toLowerCase();
     let text;
     if (await (await this.client.getGroupData(M.from)).tsundere) {
@@ -290,7 +144,7 @@ export default class MessageHandler {
       headerType: 1,
     };
     const i = Math.floor(Math.random() * 50);
-    
+
     const bot = await (await this.client.getGroupData(M.from)).bot;
     const allowedCommands = ["enable", "disable", "switch"];
     if (!(await this.client.getGroupData(M.from)).cmd)
@@ -369,14 +223,6 @@ export default class MessageHandler {
     } catch (err: any) {
       return void this.client.log(err.message, true);
     }
-    /*try {
-			await command?.run(M, this.parseArgs(args));
-			
-			}
-			// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		} catch (err: any) {
-			return void this.client.log(err.message, true);
-		}*/
   };
 
   moderate = async (M: ISimplifiedMessage): Promise<void> => {
@@ -402,6 +248,39 @@ export default class MessageHandler {
         });
       }
     }
+  };
+
+  spawnPokemon = async (M: ISimplifiedMessage): Promise<void> => {
+    if (
+      (await !(await this.client.getGroupData(M.from)).wild) ||
+      this.client.user.name !==
+        (await (
+          await this.client.getGroupData(M.from)
+        ).bot)
+    )
+      return void null;
+    cron.schedule("*/5 * * * *", async () => {
+      const i = Math.floor(Math.random() * 898);
+      const y = Math.floor(Math.random() * 100);
+      const { data } = await axios.get(
+        `https://pokeapi.co/api/v2/pokemon/${i}`
+      );
+      const buffer = await this.client.getBuffer(
+        `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
+      );
+      await this.client.DB.group.updateMany(
+        { jid: M.from },
+        {
+          $set: {
+            catchable: true,
+            lastPokemon: data.name,
+            pId: data.id,
+            pLevel: y,
+            PImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
+          },
+        }
+      );
+    });
   };
 
   loadCommands = (): void => {
