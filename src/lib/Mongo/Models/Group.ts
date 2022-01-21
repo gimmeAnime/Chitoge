@@ -171,6 +171,42 @@ const GroupSchema = new Schema({
   tWant: {
     type: String,
   },
+
+  cards: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+
+  cClaimable: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+
+  cId: {
+    type: Number,
+  },
+
+  cName: {
+    type: String,
+  },
+
+  cTier: {
+    type: String,
+  },
+
+  cSource: {
+    type: String,
+  },
+
+  cImage: {
+    type: String,
+  },
+
+  cPrice: {
+    type: Number,
+  },
 });
 
 export default model<IGroupModel>("groups", GroupSchema);

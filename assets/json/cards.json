@@ -3,56 +3,56 @@
     {
       "id": 0,
       "name": "Chitoge Kirisaki-5",
-      "tier": 5,
+      "tier": "5",
       "source": "Nisekoi",
       "image": "https://cdn.shoob.gg/images/cards/5/1580745638427.png"
     },
     {
       "id": 1,
       "name": "Angela Balzac-4",
-      "tier": 4,
+      "tier": "4",
       "source": "Rakuen Tsuihou",
       "image": "https://cdn.shoob.gg/images/cards/4/d6ab68b7e681ee0a972a2341a10cf496981621af461705b115a5e61518db893a.png"
     },
     {
       "id": 2,
       "name": "William G. Maryblood-2",
-      "tier": 2,
+      "tier": "2",
       "source": "Saihate no Paladin",
       "image": "https://cdn.shoob.gg/images/cards/2/980441ce33acb8c5f4cdd1c8374e5c707ac4f78cf74c5402a1e01406fd036b57.png"
     },
     {
       "id": 3,
       "name": "Siesta-6",
-      "tier": 6,
+      "tier": "6",
       "source": "The Detective Is Already Dead",
       "image": "https://media1.tenor.com/images/881d4bdfe2f10ec10880084334111ade/tenor.gif"
     },
     {
       "id": 4,
       "name": "Kaede Otori-1",
-      "tier": 1,
+      "tier": "1",
       "source": "Komi Can't Communicate",
       "image": "https://cdn.shoob.gg/images/cards/1/9ea3afc2397bcff7efcf9ef9778288c0167cf021098bac7f459aabc4acaf3ae0.png"
     },
     {
       "id": 5,
       "name": "Yuyu and Toto-3",
-      "tier": 3,
+      "tier": "3",
       "source": "Flip Flappers",
       "image": "https://cdn.shoob.gg/images/cards/3/2313ff67fe78760936653cd1a442b56060c3c3bf00da8f3e4e88607b88571301.png"
     },
     {
       "id": 6,
       "name": "Apeas-1",
-      "tier": 1,
+      "tier": "1",
       "source": "Ousama Ranking",
       "image": "https://cdn.shoob.gg/images/cards/1/b69d955b52b7ce79f26bb69bb32c527c.png"
     },
     {
       "id": 7,
       "name": "Ruti Ragnason-2",
-      "tier": 2,
+      "tier": "2",
       "source": "Shin no Nakama",
       "image": "https://cdn.shoob.gg/images/cards/2/28180cabd738af8a61165fc3c5884b34e0673bf6b81a54aa7f01daf96380714c.png"
     },
@@ -66,133 +66,133 @@
     {
       "id": 9,
       "name": "Nino Nakano-5",
-      "tier": 5,
+      "tier": "5",
       "source": "The Quintessential Quintuplets",
       "image": "https://cdn.shoob.gg/images/cards/5/1602374433806.png"
     },
     {
       "id": 10,
       "name": "Emma-4",
-      "tier": 4,
+      "tier": "4",
       "source": "The Magnificent Kotobuki",
       "image": "https://cdn.shoob.gg/images/cards/4/4a9c6cb6da8d5926d4de920588f91e83a93a5810579bc08d2ef13f847c9764f5.png"
     },
     {
       "id": 11,
       "name": "Mirai Kakehashi-2",
-      "tier": 2,
+      "tier": "2",
       "source": "Platinum End",
       "image": "https://cdn.shoob.gg/images/cards/2/6f64b704757e63f7afe3a55bfd01dc2436157ad032b808f355443235fa0bc50c.png"
     },
     {
       "id": 12,
       "name": "Tsubaki Akabane-3",
-      "tier": 3,
+      "tier": "3",
       "source": "Animegataris",
       "image": "https://cdn.shoob.gg/images/cards/3/ac83ccd79b6b5201e9ddfb5e9161ff6aa93063b77720927287c01c49eef66fe8.png"
     },
     {
       "id": 13,
       "name": "Hell-3",
-      "tier": 3,
+      "tier": "3",
       "source": "Takt Op. Destiny",
       "image": "https://cdn.shoob.gg/images/cards/3/2c5f500192d7011fc4b755c5b3f7d7ca2a0da43766f68da516a7d8a2789d49e7.png"
     },
     {
       "id": 14,
       "name": "Ami Enan-1",
-      "tier": 1,
+      "tier": "1",
       "source": "Lupin the Third",
       "image": "https://cdn.shoob.gg/images/cards/1/970b61fda8853b3c60e6353d26af48ff84fb4e099b78f0d1c5286b3aa516a5a7.png"
     },
     {
       "id": 15,
       "name": "Bei Bei Yang-3",
-      "tier": 3,
+      "tier": "3",
       "source": "Animegataris",
       "image": "https://cdn.shoob.gg/images/cards/3/8b6c869044df6f6f0c9d3d4f5bde615986fe06ce18d2e856b74d42672f4a351e.png"
     },
     {
       "id": 16,
       "name": "Didier Viardot-1",
-      "tier": 1,
+      "tier": "1",
       "source": "Hortensia Saga",
       "image": "https://cdn.shoob.gg/images/cards/1/222cb3c388416e38c5336abdac7fc0bde551f572e73f630a90323136fdefc241.png"
     },
     {
       "id": 17,
       "name": "Subaru Hoshikawa-2",
-      "tier": 2,
+      "tier": "2",
       "source": "Mega Man Series",
       "image": "https://cdn.shoob.gg/images/cards/2/6e07c2522e87a9a2945c048fc3a9601fc89f9b4d167cf60be38fa8016bad1a35.png"
     },
     {
       "id": 18,
       "name": "Titan-3",
-      "tier": 3,
+      "tier": "3",
       "source": "Takt Op. Destiny",
       "image": "https://cdn.shoob.gg/images/cards/3/a35e2782fff459f3ec8312eaa15dda11636ccac69adb97c6810a64dff5d89852.png"
     },
     {
       "id": 19,
       "name": "Heaven-3",
-      "tier": 3,
+      "tier": "3",
       "source": "Takt Op. Destiny",
       "image": "https://cdn.shoob.gg/images/cards/3/2c3b16fe44ba92c076eb877ce8c70f50591e63406360548a420746d0500b5d14.png"
     },
     {
       "id": 20,
       "name": "Maou-2",
-      "tier": 2,
+      "tier": "2",
       "source": "Maoyuu Maou Yuusha",
       "image": "https://cdn.shoob.gg/images/cards/2/5f6b61d935837ea4a9f3df9615db8408bc8a367b7ef7e2ac5346f2ac6fad0a46.png"
     },
     {
       "id": 21,
       "name": "Kana Kimishima-5",
-      "tier": 5,
+      "tier": "5",
       "source": "Parasyte",
       "image": "https://cdn.shoob.gg/images/cards/5/b7cace3d311cf49f498d0ad62561866f.png"
     },
     {
       "id": 22,
       "name": "Yoshino Koiwai-5",
-      "tier": 5,
+      "tier": "5",
       "source": "Masamune-kun no Revenge",
       "image": "https://cdn.shoob.gg/images/cards/5/cdfc1a186a3e4105de58d023091761bb85b269dcc4692684fd7a2bf4b53ea224.png"
     },
     {
       "id": 23,
       "name": "Goddes-3",
-      "tier": 3,
+      "tier": "3",
       "source": "Ansatsu Kizoku",
       "image": "https://cdn.shoob.gg/images/cards/3/78d8fef93e7c40fdb6983f72581ee5f3eccca57afdde23fc64a74763eb73f0e0.png"
     },
     {
       "id": 24,
       "name": "Ichika Nakano-5",
-      "tier": 5,
+      "tier": "5",
       "source": "The Quintessential Quintuplets",
       "image": "https://cdn.shoob.gg/images/cards/5/1602374309853.png"
     },
     {
       "id": 25,
       "name": "Miku Nakano-5",
-      "tier": 5,
+      "tier": "5",
       "source": "The Quintessential Quintuplets",
       "image": "https://cdn.shoob.gg/images/cards/5/1602374367027.png"
     },
     {
       "id": 26,
       "name": "Yotsuba Nakano-5",
-      "tier": 5,
+      "tier": "5",
       "source": "The Quintessential Quintuplets",
       "image": "https://cdn.shoob.gg/images/cards/5/1613762436779.png"
     },
     {
       "id": 27,
       "name": "Itsuki Nakano-5",
-      "tier": 5,
+      "tier": "5",
       "source": "The Quintessential Quintuplets",
       "image": "https://cdn.shoob.gg/images/cards/5/1602374335783.png"
     },
@@ -213,7 +213,7 @@
     {
       "id": 30,
       "name": "Fuutarou Uesugi-5",
-      "tier": 5,
+      "tier": "5",
       "source": "The Quintessential Quintuplets",
       "image": "https://cdn.shoob.gg/images/cards/5/1613520292683.png"
     }

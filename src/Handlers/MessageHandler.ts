@@ -6,7 +6,7 @@ import { join } from "path";
 import BaseCommand from "../lib/BaseCommand";
 import WAClient from "../lib/WAClient";
 import { ICommand, IParsedArgs, ISimplifiedMessage } from "../typings";
-import { MessageType } from "@adiwajshing/baileys";
+import { MessageType, Mimetype } from "@adiwajshing/baileys";
 import { setTimeout } from "timers";
 import cron from "node-cron";
 export default class MessageHandler {
@@ -284,6 +284,130 @@ export default class MessageHandler {
           caption: `A wild pokemon appeared! Use ${this.client.config.prefix}catch to catch this pokemon.`,
         }
       ));
+    });
+  };
+
+  spawnCards = async (): Promise<void> => {
+    cron.schedule("*/3 * * * *", async () => {
+      const groups = await (await this.client.getFeatures("cards")).jids;
+      const p = Math.floor(Math.random() * groups.length);
+      const Data = await this.client.getGroupData(groups[p]);
+      if (Data.bot !== this.client.user.name) return void null;
+      const w = JSON.parse(
+        (this.client.assets.get("cards") as Buffer)?.toString()
+      ) as unknown as {
+        cards: {
+          id: number;
+          name: string;
+          tier: string;
+          source: string;
+          image: string;
+        }[];
+      };
+      const card = w.cards[Math.floor(Math.random() * w.cards.length)];
+      let price;
+      if (card.tier === "1") {
+        price = Math.floor(Math.random() * (750 - 500) + 500);
+      } else if (card.tier === "2") {
+        price = Math.floor(Math.random() * (1200 - 800) + 800);
+      } else if (card.tier === "3") {
+        price = Math.floor(Math.random() * (1750 - 1400) + 1750);
+      } else if (card.tier === "4") {
+        price = Math.floor(Math.random() * (4500 - 3000) + 3000);
+      } else if (card.tier === "5") {
+        price = Math.floor(Math.random() * (9500 - 7000) + 7000);
+      } else if (card.tier === "6") {
+        price = Math.floor(Math.random() * (35000 - 24000) + 24000);
+      } else {
+        price = Math.floor(Math.random() * (69000 - 54500) + 54500);
+      }
+      await this.client.DB.group.updateMany(
+        { jid: groups[p] },
+        {
+          $set: {
+            cClaimable: true,
+            cId: card.id,
+            cName: card.name,
+            cTier: card.tier,
+            cSource: card.source,
+            cImage: card.image,
+            cPrice: price,
+          },
+        }
+      );
+      let text: string;
+      if (card.tier === "S") {
+        text = `Woahh! An S tier card appeared. *Use ${
+          this.client.config.prefix
+        }claim to claim this card.*\n\n🃏 Card Details 🃏\n\n💠 Title: ${
+          card.name.split("-")[0]
+        }\n👑 Tier: ${card.tier}\n💰 Price: ${price}\n📝 Description: ${
+          card.name.split("-")[0]
+        } from ${card.source}.`;
+      } else {
+        text = `A Collectable Card Appeared! *Use ${
+          this.client.config.prefix
+        }claim to claim this card.*\n\n🃏 Card Details 🃏\n\n💠 Title: ${
+          card.name.split("-")[0]
+        }\n👑 Tier: ${card.tier}\n💰 Price: ${price}\n📝 Description: ${
+          card.name.split("-")[0]
+        } from ${card.source}.`;
+      }
+      if (card.tier === "6" || card.tier === "S") {
+        const buffer = await this.client.util.GIFBufferToVideoBuffer(
+          await this.client.getBuffer(card.image)
+        );
+        const media = await this.client.prepareMessage(
+          groups[p],
+          buffer,
+          MessageType.video
+        );
+        const buttons = [
+          {
+            buttonId: "claim",
+            buttonText: { displayText: `${this.client.config.prefix}claim` },
+            type: 1,
+          },
+        ];
+        const buttonMessage: any = {
+          contentText: text,
+          footerText: "🌠 Shooting Star 🌠",
+          buttons: buttons,
+          headerType: 5,
+          videoMessage: media?.message?.videoMessage,
+        };
+        return void (await this.client.sendMessage(
+          groups[0],
+          buttonMessage,
+          MessageType.buttonsMessage
+        ));
+      } else {
+        const buffer = await this.client.getBuffer(card.image);
+        const media = await this.client.prepareMessage(
+          groups[p],
+          buffer,
+          MessageType.image
+        );
+        const buttons = [
+          {
+            buttonId: "claim",
+            buttonText: { displayText: `${this.client.config.prefix}claim` },
+            type: 1,
+          },
+        ];
+        const buttonMessage: any = {
+          contentText: text,
+          footerText: "🌠 Shooting Star 🌠",
+          buttons: buttons,
+          headerType: 4,
+          videoMessage: media?.message?.videoMessage,
+        };
+        return void (await this.client.sendMessage(
+          groups[0],
+          buttonMessage,
+          MessageType.buttonsMessage
+        ));
+      }
     });
   };
 

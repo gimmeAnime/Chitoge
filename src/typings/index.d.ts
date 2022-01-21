@@ -72,6 +72,14 @@ export interface IGroup {
     image: string;
   };
   tWant: string;
+  cards: boolean;
+  cClaimable: boolean;
+  cId: number;
+  cName: string;
+  cTier: string;
+  cSource: string;
+  cImage: string;
+  cPrice: number;
 }
 
 export interface IUser {
@@ -138,6 +146,101 @@ export interface IEconomy {
   jid: string;
   wallet: number;
   bank: number;
+}
+
+export interface ICard {
+  jid: string;
+  deck: [
+    {
+      id: number;
+      name: string;
+      tier: string;
+      source: string;
+      image: string;
+    }
+  ];
+  collection: [
+    {
+      id: number;
+      name: string;
+      tier: string;
+      source: string;
+      image: string;
+    }
+  ];
+  cards: [
+    {
+      id: number;
+      name: string;
+      tier: string;
+      image: string;
+    }
+  ];
+  tiers: {
+    s: [
+      {
+        id: number;
+        name: string;
+        tier: string;
+        source: string;
+        image: string;
+      }
+    ];
+    six: [
+      {
+        id: number;
+        name: string;
+        tier: string;
+        source: string;
+        image: string;
+      }
+    ];
+    five: [
+      {
+        id: number;
+        name: string;
+        tier: string;
+        source: string;
+        image: string;
+      }
+    ];
+    four: [
+      {
+        id: number;
+        name: string;
+        tier: string;
+        source: string;
+        image: string;
+      }
+    ];
+    three: [
+      {
+        id: number;
+        name: string;
+        tier: string;
+        source: string;
+        image: string;
+      }
+    ];
+    two: [
+      {
+        id: number;
+        name: string;
+        tier: string;
+        source: string;
+        image: string;
+      }
+    ];
+    one: [
+      {
+        id: number;
+        name: string;
+        tier: string;
+        source: string;
+        image: string;
+      }
+    ];
+  };
 }
 
 export interface IFeature {

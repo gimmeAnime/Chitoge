@@ -22,7 +22,7 @@ import {
   ICountdown,
   IPokemons,
   IHaigusha,
-  IEconomy
+  IEconomy,
 } from "../typings";
 import Utils from "./Utils";
 import DatabaseHandler from "../Handlers/DatabaseHandler";
@@ -236,13 +236,13 @@ export default class WAClient extends Base {
   };
 
   getGold = async (jid: string): Promise<IEconomy> => {
-    let user = await this.DB.gold.findOne({ jid })
+    let user = await this.DB.gold.findOne({ jid });
     if (!user)
-    user = await new this.DB.gold({
-      jid,
-    }).save()
-    return user
-  }
+      user = await new this.DB.gold({
+        jid,
+      }).save();
+    return user;
+  };
 
   getBuffer = async (url: string): Promise<Buffer> =>
     (await axios.get<Buffer>(url, { responseType: "arraybuffer" })).data;
@@ -284,43 +284,54 @@ export default class WAClient extends Base {
   };
 
   deposit = async (jid: string, amount: number): Promise<void> => {
-    const result = await this.DB.gold.updateMany({ jid }, { $inc: { wallet: -amount, bank: amount } })
+    const result = await this.DB.gold.updateMany(
+      { jid },
+      { $inc: { wallet: -amount, bank: amount } }
+    );
     if (!result.nModified)
-    await new this.DB.gold({
-      jid,
-      wallet: -amount,
-      bank: amount
-    }).save()
-  }
+      await new this.DB.gold({
+        jid,
+        wallet: -amount,
+        bank: amount,
+      }).save();
+  };
 
   withdraw = async (jid: string, amount: number): Promise<void> => {
-    const result = await this.DB.gold.updateMany({ jid }, { $inc: { wallet: amount, bank: -amount } })
+    const result = await this.DB.gold.updateMany(
+      { jid },
+      { $inc: { wallet: amount, bank: -amount } }
+    );
     if (!result.nModified)
-    await new this.DB.gold({
-      jid,
-      wallet: amount,
-      bank: -amount
-    }).save()
-  }
+      await new this.DB.gold({
+        jid,
+        wallet: amount,
+        bank: -amount,
+      }).save();
+  };
 
   reduceGold = async (jid: string, amount: number): Promise<void> => {
-     const result = await this.DB.gold.updateOne({ jid }, { $inc: { wallet: -amount } })
-     if (!result.nModified)
-     await new this.DB.gold({
-       jid,
-       wallet: -amount
-     }).save()
-  }
+    const result = await this.DB.gold.updateOne(
+      { jid },
+      { $inc: { wallet: -amount } }
+    );
+    if (!result.nModified)
+      await new this.DB.gold({
+        jid,
+        wallet: -amount,
+      }).save();
+  };
 
   addGold = async (jid: string, amount: number): Promise<void> => {
-    const result = await this.DB.gold.updateOne({ jid }, { $inc: { wallet: amount } })
+    const result = await this.DB.gold.updateOne(
+      { jid },
+      { $inc: { wallet: amount } }
+    );
     if (!result.nModified)
-    await new this.DB.gold({
-      jid,
-      wallet: amount
-    }).save()
-  }
-
+      await new this.DB.gold({
+        jid,
+        wallet: amount,
+      }).save();
+  };
 
   modifyAllChats = async (
     action:
@@ -384,5 +395,5 @@ export enum toggleableGroupActions {
   normal = "normal",
   tsundere = "tsundere",
   wild = "wild",
-  charagame = "charagame",
+  cards = "cards",
 }

@@ -43,6 +43,17 @@ export default class Command extends BaseCommand {
         { $pull: { jids: M.from } }
       );
     }
+    if (type === "cards") {
+      await this.client.DB.group.updateOne(
+        { jid: M.from },
+        { $set: { cards: false } }
+      );
+      await this.client.DB.feature.updateOne(
+        { feature: "cards" },
+        { $pull: { jids: M.from } }
+      );
+      return void M.reply(`🟩 *Cards* is now enabled`);
+    }
     await this.client.DB.group.updateOne(
       { jid: M.from },
       { $set: { [type]: false } }
