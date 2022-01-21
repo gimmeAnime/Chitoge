@@ -276,7 +276,7 @@ export default class MessageHandler {
             lastPokemon: data.name,
             pId: data.id,
             pLevel: y,
-            PImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
+            pImage: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
           },
         }
       );
