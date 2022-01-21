@@ -29,17 +29,22 @@ export default class Command extends BaseCommand {
       return void M.reply(
         `🟥 Invalid Option: *${this.client.util.capitalize(type)}*`
       );
-    if (type === "cmd") {
-      await this.client.DB.group.updateOne(
-        { jid: M.from },
-        { $set: { ["cmd"]: true } }
-      );
-    }
     const data = await this.client.getGroupData(M.from);
     if (data[type])
       return void M.reply(
         `🟨 *${this.client.util.capitalize(type)}* is already *enabled*, Baka!`
       );
+    if (type === "wild") {
+      await this.client.DB.group.updateOne(
+        { jid: M.from },
+        { $set: { wild: true } }
+      )
+      await this.client.DB.feature.updateOne(
+        { feature: "wild" },
+        { $push: { jids: M.from } }
+      )
+      return void M.reply(`🟩*Wild* is now enabled`)
+    }
     await this.client.DB.group.updateOne(
       { jid: M.from },
       { $set: { [type]: true } }

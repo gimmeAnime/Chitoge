@@ -250,16 +250,12 @@ export default class MessageHandler {
     }
   };
 
-  spawnPokemon = async (M: ISimplifiedMessage): Promise<void> => {
-    if (
-      (await !(await this.client.getGroupData(M.from)).wild) ||
-      this.client.user.name !==
-        (await (
-          await this.client.getGroupData(M.from)
-        ).bot)
-    )
-      return void null;
-    cron.schedule("*/5 * * * *", async () => {
+  spawnPokemon = async (): Promise<void> => {
+    cron.schdule("*/2 * * * *", async () => {
+      const groups = await (await this.client.getFeatures("wild")).jids;
+      const p = Math.floor(Math.random() * groups.length);
+      const Data = await this.client.getGroupData(groups[p]);
+      if (Data.bot !== this.client.user.name) return void null;
       const i = Math.floor(Math.random() * 898);
       const y = Math.floor(Math.random() * 100);
       const { data } = await axios.get(
@@ -269,7 +265,7 @@ export default class MessageHandler {
         `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
       );
       await this.client.DB.group.updateMany(
-        { jid: M.from },
+        { jid: groups[p] },
         {
           $set: {
             catchable: true,
@@ -281,11 +277,11 @@ export default class MessageHandler {
         }
       );
       return void (await this.client.sendMessage(
-        M.from,
+        groups[p],
         buffer,
         MessageType.image,
         {
-          caption: `A wild pokemon appeared! Use ${this.client.config.prefix}catch <pokemon_name> to catch this pokemon.`,
+          caption: `A wild pokemon appeared! Use ${this.client.config.prefix}catch to catch this pokemon.`,
         }
       ));
     });

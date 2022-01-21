@@ -143,6 +143,7 @@ export interface IEconomy {
 export interface IFeature {
   feature: string;
   state: boolean;
+  jids: string[];
 }
 
 export interface IPackage {

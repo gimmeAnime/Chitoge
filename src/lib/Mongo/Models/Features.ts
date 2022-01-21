@@ -8,6 +8,9 @@ const FeatureSchema = new Schema({
     required: false,
     default: true,
   },
+  jids: {
+    type: [String],
+  },
 });
 
 // change name

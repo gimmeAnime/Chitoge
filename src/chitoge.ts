@@ -71,7 +71,7 @@ const start = async () => {
         client.log("Cleared all Chats!");
       });
     }
-    messageHandler.spawnPokemon;
+    messageHandler.spawnPokemon();
   });
 
   client.on("CB:Call", async (json) => {
