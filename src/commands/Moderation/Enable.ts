@@ -22,6 +22,7 @@ export default class Command extends BaseCommand {
     M: ISimplifiedMessage,
     { joined }: IParsedArgs
   ): Promise<void> => {
+    const Data = await this.client.getFeatures("wild");
     const type = joined.trim().toLowerCase() as toggleableGroupActions;
     if (type === "tsundere" || type === "normal")
       return void M.reply(`🟥 Invalid Option: *${type}*`);
