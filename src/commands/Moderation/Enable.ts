@@ -38,12 +38,12 @@ export default class Command extends BaseCommand {
       await this.client.DB.group.updateOne(
         { jid: M.from },
         { $set: { wild: true } }
-      )
+      );
       await this.client.DB.feature.updateOne(
         { feature: "wild" },
         { $push: { jids: M.from } }
-      )
-      return void M.reply(`🟩*Wild* is now enabled`)
+      );
+      return void M.reply(`🟩 *Wild* is now enabled`);
     }
     await this.client.DB.group.updateOne(
       { jid: M.from },

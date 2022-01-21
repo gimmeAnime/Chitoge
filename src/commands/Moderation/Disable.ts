@@ -41,7 +41,7 @@ export default class Command extends BaseCommand {
         { feature: "wild" },
         { $pull: { jids: M.from } }
       );
-      return void M.reply(`🟩*Wild* is now enabled`);
+      return void M.reply(`🟩 *Wild* is now disabled`);
     }
     await this.client.DB.group.updateOne(
       { jid: M.from },
