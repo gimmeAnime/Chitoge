@@ -99,3 +99,5 @@ const cardsSchema = new Schema({
     ],
   },
 });
+
+export default model<ICard>("cards", cardsSchema);

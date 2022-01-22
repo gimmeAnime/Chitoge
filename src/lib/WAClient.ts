@@ -23,6 +23,7 @@ import {
   IPokemons,
   IHaigusha,
   IEconomy,
+  ICard,
 } from "../typings";
 import Utils from "./Utils";
 import DatabaseHandler from "../Handlers/DatabaseHandler";
@@ -239,6 +240,15 @@ export default class WAClient extends Base {
     let user = await this.DB.gold.findOne({ jid });
     if (!user)
       user = await new this.DB.gold({
+        jid,
+      }).save();
+    return user;
+  };
+
+  getCards = async (jid: string): Promise<ICard> => {
+    let user = await this.DB.card.findOne({ jid });
+    if (!user)
+      user = await new this.DB.card({
         jid,
       }).save();
     return user;

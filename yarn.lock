@@ -4352,15 +4352,15 @@ node-superfetch@^0.1.11:
     form-data "^3.0.0"
     node-fetch "^2.6.0"
 
+node-webpmux@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/node-webpmux/-/node-webpmux-2.0.1.tgz#3ebb8e82f1660f3368713ec4109f5610d17d903f"
+  integrity sha512-h1hkaNM5oO7aiMn0on3c8PCc6z/t1IwVhO3+fSV5LWmzKeicCEUW6i5H/l2+iORj0uZRGbwyRC/ry6bPtQ5ThQ==
+
 node-webpmux@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/node-webpmux/-/node-webpmux-3.1.0.tgz#f8fdde2d6c55a51ffd5f91e3b0c70daae963b8d4"
   integrity sha512-0fBo2eDIxLBVyFLqLJwPxQAgwRnMhv/l8M8kKWRuFvPz+InrLh+AAt8faVLaOlO8bQBA7MPEt5o12nc9uHu21g==
-
-node-webpmux@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/node-webpmux/-/node-webpmux-3.1.1.tgz#a063d9c40de01809d980afdcb4b413b21c2e1a57"
-  integrity sha512-vG75BAe9zKghN+Y+XsJMPdOfVyesn1MmGvd/DMxeQ6gtpB3U053yCWXO1Gl2QWXTfU1++7flTihv/yB6EEdtKQ==
 
 nopt@^5.0.0:
   version "5.0.0"

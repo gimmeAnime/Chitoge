@@ -7,7 +7,8 @@ import IFeatureModel from "../lib/Mongo/Models/Features";
 import haigushaModel from "../lib/Mongo/Models/HaigushA";
 import pokemonModel from "../lib/Mongo/Models/Pokemons";
 import cdModel from "../lib/Mongo/Models/Countdown";
-import economyModel from "../lib/Mongo/Models/Economy"
+import economyModel from "../lib/Mongo/Models/Economy";
+import cardsModel from "../lib/Mongo/Models/Card";
 
 export default class DatabaseHandler implements IDBModels {
   user = UserModel;
@@ -18,5 +19,6 @@ export default class DatabaseHandler implements IDBModels {
   haigusha = haigushaModel;
   pokemons = pokemonModel;
   cd = cdModel;
-  gold = economyModel
+  gold = economyModel;
+  card = cardsModel;
 }

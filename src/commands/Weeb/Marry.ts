@@ -10,7 +10,6 @@ export default class Command extends BaseCommand {
     super(client, handler, {
       command: "marry",
       description: `Will marry the recently summoned haigusha.`,
-      aliases: ["claim"],
       category: "weeb",
       usage: `${client.config.prefix}marry`,
       baseXp: 10,
