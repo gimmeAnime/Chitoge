@@ -5,6 +5,7 @@ import { exec } from "child_process";
 import { readFile, unlink, writeFile } from "fs/promises";
 import { tmpdir } from "os";
 import { promisify } from "util";
+import webp from "node-webpmux";
 
 export default class {
   exec = promisify(exec);
@@ -17,6 +18,31 @@ export default class {
     const buffer = await readFile(`${filename}.mp4`);
     Promise.all([unlink(`${filename}.mp4`), unlink(`${filename}.gif`)]);
     return buffer;
+  };
+  webpToMp4 = async (Webp: Buffer): Promise<Buffer> => {
+    const filename = `${tmpdir()}/${Math.random().toString(36)}`;
+    await writeFile(`${filename}.webp`, Webp);
+    const img = new webp.Image();
+    const temp = tmpdir();
+    const out = `${temp}/${Math.random().toString(36)}.mp4`;
+    await img.load(filename);
+    let frames = img.anim.frames.length;
+    for (let i = 0; frames > i; i++) {
+      console.log(`frame number -> ${i}`);
+      await this.exec(
+        `webpmux -get frame ${i} ${filename} -o ${temp}/${i}.webp`
+      );
+      await this.exec(`dwebp ${temp}/$/${i}.webp -o ${temp}/${i}.png`);
+    }
+    await this.exec(
+      `ffmpeg -framerate 22 -i ${temp}/%d.png -y -c:v libx264 -pix_fmt yuv420p -loop 4 ${out}`
+    );
+    for (frames === 0; frames--; ) {
+      unlink(`${temp}/$/${frames}.webp`);
+      unlink(`${temp}/$/${frames}.png`);
+    }
+    const result = await readFile(out);
+    return result;
   };
 
   readdirRecursive = (directory: string): string[] => {

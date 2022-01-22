@@ -1,7 +1,7 @@
 /** @format */
 
 declare module "akaneko";
-declare module "go-image-go";
+declare module "node-webpmux";
 declare module "mathjs";
 declare module "canvacord";
 declare module "genshin-db";
