@@ -24,24 +24,24 @@ export default class {
     await writeFile(`${filename}.webp`, Webp);
     const img = new webp.Image();
     const temp = tmpdir();
-    const out = `${temp}/${Math.random().toString(36)}.mp4`;
-    await img.load(filename);
+    const out = `${temp}/${Math.random().toString(36)}`;
+    await img.load(`${filename}.webp`);
     let frames = img.anim.frames.length;
     for (let i = 0; frames > i; i++) {
       console.log(`frame number -> ${i}`);
-      await this.exec(
-        `webpmux -get frame ${i} ${filename} -o ${temp}/${i}.webp`
+      await exec(
+        `webpmux -get frame ${i} ${filename}.webp -o ${temp}/${i}.webp`
       );
-      await this.exec(`dwebp ${temp}/$/${i}.webp -o ${temp}/${i}.png`);
+      await exec(`dwebp ${temp}/$/${i}.webp -o ${temp}/${i}.png`);
     }
     await this.exec(
-      `ffmpeg -framerate 22 -i ${temp}/%d.png -y -c:v libx264 -pix_fmt yuv420p -loop 4 ${out}`
+      `ffmpeg -framerate 22 -i ${temp}/%d.png -y -c:v libx264 -pix_fmt yuv420p -loop 4 ${out}.mp4`
     );
     for (frames === 0; frames--; ) {
       unlink(`${temp}/$/${frames}.webp`);
       unlink(`${temp}/$/${frames}.png`);
     }
-    const result = await readFile(out);
+    const result = await readFile(`${out}.mp4`);
     return result;
   };
 
