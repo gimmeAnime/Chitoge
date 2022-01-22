@@ -159,7 +159,7 @@ export interface ICard {
       image: string;
     }
   ];
-  collection: [
+  cardsCollection: [
     {
       id: number;
       name: string;

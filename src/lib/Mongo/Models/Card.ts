@@ -16,7 +16,7 @@ const cardsSchema = new Schema({
       image: String,
     },
   ],
-  collection: [
+  cardsCollection: [
     {
       id: Number,
       name: String,
