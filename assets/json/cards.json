@@ -223,6 +223,237 @@
       "tier": "S",
       "source": "My Teen Romantic Comedy SNAFU",
       "image": "https://cdn.shoob.gg/images/cards/S/6d3438a93e4a5a159717b9612c0d9b1351a37748f205e2b372fa288a823945d3.gif"
+    },
+    {
+      "id": 32,
+      "name": "Chika Itou-2",
+      "tier": "2",
+      "source": "Ichigo Mashimaro",
+      "image": "https://cdn.shoob.gg/images/cards/2/52316755558ebd95bc8bc9f155561fedcd123b48ddddbf6eb09b257e7e49a7ab.png"
+    },
+    {
+      "id": 33,
+      "name": "Sawa Yukimura-2",
+      "tier": "2",
+      "source": "Jouran",
+      "image": "https://cdn.shoob.gg/images/cards/2/51f1774866b14538397480cf307d7d80e86e6f605570da8cb8d04a2d378e18b1.png"
+    },
+    {
+      "id": 34,
+      "name": "Charanko-1",
+      "tier": "1",
+      "source": "One Punch Man",
+      "image": "https://cdn.shoob.gg/images/cards/1/fcce3bdae6bc4253368358e87aff525dc1ff0804ceea772f715c99ec044c2e9b.png"
+    },
+    {
+      "id": 35,
+      "name": "Makeru Yadano-1",
+      "tier": "1",
+      "source": "Komi Can't Communicate",
+      "image": "https://cdn.shoob.gg/images/cards/1/9258be533772340741f2280f5f1b402cff3db5bff3e8629389b2ba46934873cd.png"
+    },
+    {
+      "id": 36,
+      "name": "Liang-1",
+      "tier": "1",
+      "source": "Nanbaka",
+      "image": "https://cdn.shoob.gg/images/cards/1/7b9e780f731022bb026628a4fc918ce8c4343e4c706ff925a204f0853eb71283.png"
+    },
+    {
+      "id": 37,
+      "name": "Kikka-1",
+      "tier": "1",
+      "source": "Build Divide: Code Black",
+      "image": "https://cdn.shoob.gg/images/cards/1/6f88d9ea48ae23034fe0f4915c0b2e5d7797793e0b2c5b7828ad232d240f9ff4.png"
+    },
+    {
+      "id": 38,
+      "name": "Shuuko Momi-1",
+      "tier": "1",
+      "source": "Komi Can't Communicate",
+      "image": "https://cdn.shoob.gg/images/cards/1/9a9a8c3b755ec7aa9a9648e8699c6528688834022b134fc9cce8ee0ef05bb5b6.png"
+    },
+    {
+      "id": 39,
+      "name": "Yuka Teramoto-1",
+      "tier": "1",
+      "source": "Oshibudo",
+      "image": "https://cdn.shoob.gg/images/cards/1/487078b71fd19e3aa06940d568eab47d153184a80a3e993f0d10f763dcf3c2af.png"
+    },
+    {
+      "id": 40,
+      "name": "Kuon Tsuchimikado-1",
+      "tier": "1",
+      "source": "Granbelm",
+      "image": "https://cdn.shoob.gg/images/cards/1/61e23dc2b2b6481357310359f791a803ecef3c4ddb6b6481eab124cb6afecad7.png"
+    },
+    {
+      "id": 41,
+      "name": "Zanoba Shirone-1",
+      "tier": "1",
+      "source": "Mushoku Tensei",
+      "image": "https://cdn.shoob.gg/images/cards/1/e13d5996e3930ff225085f96f9d412d7138e59d138ba43f24c895685c1da55a4.png"
+    },
+    {
+      "id": 42,
+      "name": "Trebol-1",
+      "tier": "1",
+      "source": "One Peice",
+      "image": "https://cdn.shoob.gg/images/cards/1/4deb9418eff15f416e0b09a4e591ba3f1d1731cd9797e91f11236ef001d0909e.png"
+    },
+    {
+      "id": 43,
+      "name": "Elinalise Dragonroad-1",
+      "tier": "1",
+      "source": "Mushoku Tensei",
+      "image": "https://cdn.shoob.gg/images/cards/1/4afbd326134fbeb64e115302b8a4c28e13fd673b6813607019bcc7d27c8cd1e9.png"
+    },
+    {
+      "id": 44,
+      "name": "Anya Simonyan-1",
+      "tier": "1",
+      "source": "Tsuki To Laika To Nosferatu",
+      "image": "https://cdn.shoob.gg/images/cards/1/f3667ff00ca2aaedfddd7b1935e8323e8a42ac5bf383a9e1c849fd5323f7d56d.png"
+    },
+    {
+      "id": 45,
+      "name": "Kyousuke Yotsuya-1",
+      "tier": "1",
+      "source": "Mieruko-chan",
+      "image": "https://cdn.shoob.gg/images/cards/1/efbba8de1e4e545dd04361ec81a991aa897a516d6ba284a322e5cc0c4847affe.png"
+    },
+    {
+      "id": 46,
+      "name": "Kriemhild Celas-1",
+      "tier": "1",
+      "source": "Kakumeiki Valvrave",
+      "image": "https://cdn.shoob.gg/images/cards/1/d26f4815704590aceff09b2d2b558a4629b6db7c5498a3403b829feebf4f4f86.png"
+    },
+    {
+      "id": 47,
+      "name": "Akari Amasawa-1",
+      "tier": "1",
+      "source": "Selection Project",
+      "image": "https://cdn.shoob.gg/images/cards/1/a65dacb873d8ca494059284c3643179e48f6d23cdbfde642359ebc366f493925.png"
+    },
+    {
+      "id": 48,
+      "name": "Maruno Satou-1",
+      "tier": "1",
+      "source": "Iwa Kakeru!: Sport Climbing Girls",
+      "image": "https://cdn.shoob.gg/images/cards/1/20a3892fc97a1479f7f84136913329f49f59fb65f60d7c9cd06870edaac3bbbc.png"
+    },
+    {
+      "id": 49,
+      "name": "Kikuko Gotou-1",
+      "tier": "1",
+      "source": "Iwa Kakeru!: Sport Climbing Girls",
+      "image": "https://cdn.shoob.gg/images/cards/1/39cf7f7fa7a32f4d7f0526e360bf497e.png"
+    },
+    {
+      "id": 50,
+      "name": "Hanabi Ichijou-1",
+      "tier": "1",
+      "source": "Scarlet Nexus",
+      "image": "https://cdn.shoob.gg/images/cards/1/e52dc3713ff026413b963efadf0708120f31b8bacd5d41a0a59b5b5ec406281e.png"
+    },
+    {
+      "id": 51,
+      "name": "Rina Samura-1",
+      "tier": "1",
+      "source": "Iwa Kakeru!: Sport Climbing Girls",
+      "image": "https://cdn.shoob.gg/images/cards/1/a25aab87e777a427499ffa89e6b644ecf67c677744ff105b485b2b0117032429.png"
+    },
+    {
+      "id": 52,
+      "name": "Kiyose Enami-1",
+      "tier": "1",
+      "source": "Slow Start",
+      "image": "https://cdn.shoob.gg/images/cards/1/20fc6ff4cba4783c5f21628cf7d2223dec1b02c3250cb72f3e793cecbd0bc491.png"
+    },
+    {
+      "id": 53,
+      "name": "Shou Nagahara-1",
+      "tier": "1",
+      "source": "Tsuki Ga Kirei",
+      "image": "https://cdn.shoob.gg/images/cards/1/4be2b92788cd0fb75924b071a7e48e42d5ee54e8dac99edb062a8033e489f624.png"
+    },
+    {
+      "id": 54,
+      "name": "Touka Kishi-1",
+      "tier": "1",
+      "source": "Yozakura Quartet",
+      "image": "https://cdn.shoob.gg/images/cards/1/8e86ce79f46b89662d43e7dc147de8e8666cfd501e0f15bc658c0e1a73988f46.png"
+    },
+    {
+      "id": 55,
+      "name": "The Hashira-S",
+      "tier": "S",
+      "source": "Demon Slayer",
+      "image": "https://cdn.shoob.gg/images/cards/S/59ddfcffc88981f1518bf82dad1f47a67b21bd0201264420291c9dadafddbea6.gif"
+    },
+    {
+      "id": 56,
+      "name": "Reina Izumi-4",
+      "tier": "4",
+      "source": "Myriad Colors Phantom World",
+      "image": "https://cdn.shoob.gg/images/cards/4/Reina_Phantom_Eater_Izumi;4;Myriad_Colors_Phantom_World,Original.png"
+    },
+    {
+      "id": 57,
+      "name": "Kosaki Onodera-5",
+      "tier": "5",
+      "source": "Nisekoi",
+      "image": "https://cdn.shoob.gg/images/cards/5/453d1475410d3f970fdb8508017536a9563546b809d37d1dea77a07f90a840e4.png"
+    },
+    {
+      "id": 58,
+      "name": "Shouko Komi-4",
+      "tier": "4",
+      "source": "Komi Can't Communicate",
+      "image": "https://cdn.shoob.gg/images/cards/4/ec407a5877ac5003db5ef1d79477fcc350ba09ee5de4aa4fa0e5058b67f0ad56.png"
+    },
+    {
+      "id": 59,
+      "name": "Destiny-4",
+      "tier": "4",
+      "source": "Takt Op. Destiny",
+      "image": "https://cdn.shoob.gg/images/cards/4/475f579d22b135119a9107511217813cc122f3cd92d9fda74e19c81b3f0d53ac.png"
+    },
+    {
+      "id": 60,
+      "name": "Hatsune Miku-4",
+      "tier": "4",
+      "source": "Vocaloid",
+      "image": "https://cdn.shoob.gg/images/cards/4/928b225c8c27283664758a4803601b7229a0d9100bafda9603153207424ffb9a.png"
+    },
+    {
+      "id": 61,
+      "name": "Hestia-4",
+      "tier": "4",
+      "source": "Danmachi",
+      "image": "https://cdn.shoob.gg/images/cards/4/5c320c1cbdf4d185cd33213bf91b1e34f286eeac3e60f849c60e45c33c7fa520.png"
+    },
+    {
+      "id": 62,
+      "name": "Mami, Sumi, Chizuru, and Ruka-4",
+      "tier": "4",
+      "source": "Rent a Girlfriend",
+      "image": "https://cdn.shoob.gg/images/cards/4/43b8b81340e7d735c2390b28f2ca242b75625409ce520879a4e85c3760d008c1.png"
+    },
+    {
+      "id": 63,
+      "name": "Miku and Rin-5",
+      "tier": "5",
+      "source": "Vocaloid",
+      "image": "https://cdn.shoob.gg/images/cards/5/1604269976519.png"
+    },
+    {
+      "id": 64,
+      "name": "Hatsune Miku-6",
+      "tier": "6",
+      "source": "Vocaloid",
+      "image": "https://cdn.shoob.gg/images/cards/6/1572137321220.gif"
     }
   ]
 }
