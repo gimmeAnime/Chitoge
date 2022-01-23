@@ -26,7 +26,7 @@
       "name": "Siesta-6",
       "tier": "6",
       "source": "The Detective Is Already Dead",
-      "image": "https://media1.tenor.com/images/881d4bdfe2f10ec10880084334111ade/tenor.gif"
+      "image": "https://cdn.shoob.gg/images/cards/6/0630245221392214617aab3fcb8890463743beef3ae6b249417252f30a6b641c.gif"
     },
     {
       "id": 4,
@@ -61,7 +61,7 @@
       "name": "Hu Tao-S",
       "tier": "S",
       "source": "Genshin Impact",
-      "image": "https://media1.tenor.com/images/613316e02f4b95c56706024243c33120/tenor.gif"
+      "image": "https://cdn.shoob.gg/images/cards/S/6a7253e4b9bd090bb8d3221e01a5de8eacad8873e2f79f354744d50d37cbec49.gif"
     },
     {
       "id": 9,
@@ -201,14 +201,14 @@
       "name": "Summer Girls-S",
       "tier": "S",
       "source": "Rent a Girlfriend",
-      "image": "https://media1.tenor.com/images/f7dd10464249f4f15b6be7c702edeef6/tenor.gif"
+      "image": "https://cdn.shoob.gg/images/cards/S/cc0148ce071b637b514912aad2495ef0a36dea249498630e7363bbe347bef5fe.gif"
     },
     {
       "id": 29,
       "name": "Quintuplets Catgirl-S",
       "tier": "S",
       "source": "The Quintessential Quintuplets",
-      "image": "https://media.tenor.com/videos/5572bc04da1c0ac94a687ce75f57af2a/mp4"
+      "image": "https://cdn.shoob.gg/images/cards/S/62e4db705dd1f573d136027dd8f14b662e3497ac63b295fbd822d1f61ca7e5ea.gif"
     },
     {
       "id": 30,
@@ -216,6 +216,13 @@
       "tier": "5",
       "source": "The Quintessential Quintuplets",
       "image": "https://cdn.shoob.gg/images/cards/5/1613520292683.png"
+    },
+    {
+      "id": 31,
+      "name": "Yuigahama Yui-S",
+      "tier": "S",
+      "source": "My Teen Romantic Comedy SNAFU",
+      "image": "https://cdn.shoob.gg/images/cards/S/6d3438a93e4a5a159717b9612c0d9b1351a37748f205e2b372fa288a823945d3.gif"
     }
   ]
 }
