@@ -11,6 +11,7 @@ import cron from "node-cron";
 import CallHandler from "./Handlers/CallHandler";
 import AssetHandler from "./Handlers/AssetHandler";
 import EventHandler from "./Handlers/EventHandler";
+import NewsHandler from "./Handlers/NewsHandler";
 
 if (!process.env.MONGO_URI) throw new Error("MONGO URL IS NOT PROVIDED");
 const client = new WAClient({
@@ -33,6 +34,7 @@ const messageHandler = new MessageHandler(client);
 const callHandler = new CallHandler(client);
 const assetHandler = new AssetHandler(client);
 const eventHandler = new EventHandler(client);
+const newsHandler = new NewsHandler(client);
 messageHandler.loadCommands();
 assetHandler.loadAssets();
 messageHandler.loadFeatures();
@@ -107,5 +109,6 @@ db.once("open", () => {
   client.once("open", () => {
     messageHandler.spawnPokemon();
     messageHandler.spawnCards();
+    newsHandler.broadcastNews();
   });
 });

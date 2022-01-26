@@ -454,6 +454,335 @@
       "tier": "6",
       "source": "Vocaloid",
       "image": "https://cdn.shoob.gg/images/cards/6/1572137321220.gif"
+    },
+    {
+      "id": 65,
+      "name": "Star Platinum-2",
+      "tier": "2",
+      "source": "JoJo's Bizarre Adventure",
+      "image": "https://cdn.shoob.gg/images/cards/2/8196a4a4a685774bf81d7a59670a18c5092334e95e14b032d6a2fae5f2fc528b.png"
+    },
+    {
+      "id": 66,
+      "name": "Aya Yokota-3",
+      "tier": "3",
+      "source": "Oshibudo",
+      "image": "https://cdn.shoob.gg/images/cards/3/4c371374432f545ca264f1199c18b197b15d8cadb1d1e8005b3b75386ca08a59.png"
+    },
+    {
+      "id": 67,
+      "name": "Thundercraven Rifthound-2",
+      "tier": "2",
+      "source": "Genshin Impact",
+      "image": "https://cdn.shoob.gg/images/cards/2/bb6865cf34bc25f3d78aa6e9f7f4a7f822afe45f07931e5b0a32754ab0755d70.png"
+    },
+    {
+      "id": 68,
+      "name": "WarRock-2",
+      "tier": "2",
+      "source": "Mega Man Series",
+      "image": "https://cdn.shoob.gg/images/cards/2/d40fd569b86743aa8a94304961c1c5aed27687eb6bdc7dcd71c6f4f16af70e28.png"
+    },
+    {
+      "id": 69,
+      "name": "Touko Sakurai-2",
+      "tier": "2",
+      "source": "My Senpai is Annoying",
+      "image": "https://cdn.shoob.gg/images/cards/2/3caec783b17374aa077c3df0565fe329.png"
+    },
+    {
+      "id": 70,
+      "name": "Yuria Niguredou-2",
+      "tier": "2",
+      "source": "Mieruko-chan",
+      "image": "https://cdn.shoob.gg/images/cards/2/26770a9d40a87471f231d1ba2f287eae1ab161ecee5a5d102e941b360bdd55ac.png"
+    },
+    {
+      "id": 71,
+      "name": "Yuzuki Tachibana-2",
+      "tier": "2",
+      "source": "Taishou Otome",
+      "image": "https://cdn.shoob.gg/images/cards/2/8ef598f33d7756be6938e47bb61a3bf9bee327559b6a2d5a467c417cbf25880f.png"
+    },
+    {
+      "id": 72,
+      "name": "Koizumi-2",
+      "tier": "2",
+      "source": "Ramen Daisuki Koizumi-san",
+      "image": "https://cdn.shoob.gg/images/cards/2/48a1710975a1f8bc91ed37e37ce136c46989e8d8b99502400241683268a3bc67.png"
+    },
+    {
+      "id": 73,
+      "name": "Yuu Kiyose-2",
+      "tier": "2",
+      "source": "Puraore! Pride of Orange",
+      "image": "https://cdn.shoob.gg/images/cards/2/c8f03a8d1a2223b0fb2365f7312961b643cdbbed5b0bf5434c3bbb41b3e716fa.png"
+    },
+    {
+      "id": 74,
+      "name": "Dia Viekone-2",
+      "tier": "2",
+      "source": "Ansatsu Kizoku",
+      "image": "https://cdn.shoob.gg/images/cards/2/333582a3c604ff5792df3640211266fe1e986ac0e86237d4a8a88a6ea6a8a8ab.png"
+    },
+    {
+      "id": 75,
+      "name": "Hitohito Tadano-2",
+      "tier": "2",
+      "source": "Komi Can't Communicate",
+      "image": "https://cdn.shoob.gg/images/cards/2/04f5c044a9a371ae44307ca68b583f18b5a8574cfae2c944202bae83a3819025.png"
+    },
+    {
+      "id": 76,
+      "name": "Nemo-2",
+      "tier": "2",
+      "source": "Seven Knights Revolution",
+      "image": "https://cdn.shoob.gg/images/cards/2/b1aff6e725126bab8bda880b7c0d1a3df3c62ae29b51e0e85b51a2e6b5c8a564.png"
+    },
+    {
+      "id": 77,
+      "name": "Miko Yotsuya-2",
+      "tier": "2",
+      "source": "Mieruko-chan",
+      "image": "https://cdn.shoob.gg/images/cards/2/4ab146f76e8857a63eb0525274e6bff2768eb88f94fde029e492cd01ce2864d6.png"
+    },
+    {
+      "id": 78,
+      "name": "Hana Yurikawa-2",
+      "tier": "2",
+      "source": "Mieruko-chan",
+      "image": "https://cdn.shoob.gg/images/cards/2/784116dcd820cd6b25d6d828d9df66e967f33fdae5ba929aea1c8fb0f2c0cbde.png"
+    },
+    {
+      "id": 79,
+      "name": "Takt Asahina-2",
+      "tier": "2",
+      "source": "Takt Op. Destiny",
+      "image": "https://cdn.shoob.gg/images/cards/2/64b5cb3d41fa19be5c2e83a52c80d025a4662c7edd800fc28ac0acc5c4aa942b.png"
+    },
+    {
+      "id": 80,
+      "name": "Lugh Tuatha De-2",
+      "tier": "2",
+      "source": "Ansatsu Kizoku",
+      "image": "https://cdn.shoob.gg/images/cards/2/eec1527217425489446af35dc25f91ab0b7161978c396fc6d6fee625ce31451f.png"
+    },
+    {
+      "id": 81,
+      "name": "Maha-2",
+      "tier": "2",
+      "source": "Ansatsu Kizoku",
+      "image": "https://cdn.shoob.gg/images/cards/2/45f62cb3d34f2548daffbf0bfd969794ebe2073e8e0d3baf9d821914cbf6dda6.png"
+    },
+    {
+      "id": 82,
+      "name": "Tarte-2",
+      "tier": "2",
+      "source": "Ansatsu Kizoku",
+      "image": "https://cdn.shoob.gg/images/cards/2/977837459a7e9f8668190cf73e0b2459c7762b7ad109085a4d8e494083245c11.png"
+    },
+    {
+      "id": 83,
+      "name": "Ao Yadogawa-2",
+      "tier": "2",
+      "source": "Selection Project",
+      "image": "https://cdn.shoob.gg/images/cards/2/3b95e7887e2b5d52ab8158a399a5ae47.png"
+    },
+    {
+      "id": 84,
+      "name": "Jolyne Kujo-2",
+      "tier": "2",
+      "source": "JoJo's Bizarre Adventure",
+      "image": "https://cdn.shoob.gg/images/cards/2/109fe1ac17c28a54b12e4a3303eacd37671102bde4af9bdf3a9370262360a164.png"
+    },
+    {
+      "id": 85,
+      "name": "Suzune Miyama-2",
+      "tier": "2",
+      "source": "Selection Project",
+      "image": "https://cdn.shoob.gg/images/cards/2/04eb2c25fa0de766faf66d5d754511e5de2a9840761f80480091797143a9e15b.png"
+    },
+    {
+      "id": 86,
+      "name": "Shiori Yamaga-2",
+      "tier": "2",
+      "source": "Selection Project",
+      "image": "https://cdn.shoob.gg/images/cards/2/208c5bebed769b21764fe123eb31129d9f42851a8801068f0a8d3d4f58df43aa.png"
+    },
+    {
+      "id": 87,
+      "name": "Nagisa Imau-2",
+      "tier": "2",
+      "source": "Selection Project",
+      "image": "https://cdn.shoob.gg/images/cards/2/d5d73f37b0388bbbe930479291cd3388ee8e78aa5e50e18d358bc3d35a939fb1.png"
+    },
+    {
+      "id": 88,
+      "name": "Hiromi Hamaguri-2",
+      "tier": "2",
+      "source": "Selection Project",
+      "image": "https://cdn.shoob.gg/images/cards/2/179a6e2625e53af86eb203d271191e1f712ed42897b504c8e2b0fa2fea3bcf91.png"
+    },
+    {
+      "id": 89,
+      "name": "Nadoka Yagi-2",
+      "tier": "2",
+      "source": "Selection Project",
+      "image": "https://cdn.shoob.gg/images/cards/2/525ada5c4cbb3f8dfea8803b95ee2c185b3269db65a2d646799dc37d7e965008.png"
+    },
+    {
+      "id": 90,
+      "name": "Rena Hananoi-2",
+      "tier": "2",
+      "source": "Selection Project",
+      "image": "https://cdn.shoob.gg/images/cards/2/aca254137cbadeab75111b6b9d994ec9c88f83fa4f2cd1c7bd1db1edea578049.png"
+    },
+    {
+      "id": 91,
+      "name": "Kantoku-2",
+      "tier": "2",
+      "source": "Denki-gai no Honya-san",
+      "image": "https://cdn.shoob.gg/images/cards/2/40dff320f57b34599f1620d8b7264340fa94d4fb0cf22064211fe918a4dbf9a7.png"
+    },
+    {
+      "id": 92,
+      "name": "Yuito Sumeragi-2",
+      "tier": "2",
+      "source": "Scarlet Nexus",
+      "image": "https://cdn.shoob.gg/images/cards/2/8b9bcf2fe691d2361621adca742e500a06a0517d5746eba0ec6932ec64ee5659.png"
+    },
+    {
+      "id": 93,
+      "name": "Fu Girl-2",
+      "tier": "2",
+      "source": "Denki-gai no Honya-san",
+      "image": "https://cdn.shoob.gg/images/cards/2/2276fde4ce3e3df28008f6f2b15aca9faed63975430e6d5bee977a453005ad56.png"
+    },
+    {
+      "id": 94,
+      "name": "Futaba Marui-2",
+      "tier": "2",
+      "source": "Mitsudomoe",
+      "image": "https://cdn.shoob.gg/images/cards/2/3a7cf9e1a67338873330c090841fc48a70f95456cdb8c6beda455321f8d6e4ac.png"
+    },
+    {
+      "id": 95,
+      "name": "Sensei-2",
+      "tier": "2",
+      "source": "Denki-gai no Honya-san",
+      "image": "https://cdn.shoob.gg/images/cards/2/6b28025fcf30b10f7d000dc9ed571924087a27dea5bb7d910eed586b2a83636b.png"
+    },
+    {
+      "id": 96,
+      "name": "Ryuuji Ayukawa-2",
+      "tier": "2",
+      "source": "Blue Period",
+      "image": "https://cdn.shoob.gg/images/cards/2/9702d5973905577d70fd38d2552e784d19b2af34fea98dd71c1049f31d76d9b0.png"
+    },
+    {
+      "id": 97,
+      "name": "Rise Kujikawa-2",
+      "tier": "2",
+      "source": "Persona",
+      "image": "https://cdn.shoob.gg/images/cards/2/1cdec59e48036066fb292b4e9820e761b18d5959c4d9007354ab13ade96a570f.png"
+    },
+    {
+      "id": 98,
+      "name": "Anne Kurusu-2",
+      "tier": "2",
+      "source": "Iwa Kakeru!: Sport Climbing Girls",
+      "image": "https://cdn.shoob.gg/images/cards/2/7e9c4a87c51ffe17ee48b7f96d00030570203d097d3e8d67b7356490392ac963.png"
+    },
+    {
+      "id": 99,
+      "name": "Celia Cumani Aintree-2",
+      "tier": "2",
+      "source": "Walkure Romanze",
+      "image": "https://cdn.shoob.gg/images/cards/2/54eb6865a17d81ef44e2f2ecbfc2b93479ff77a77da0a31db9daf13d9cb8fd65.png"
+    },
+    {
+      "id": 100,
+      "name": "Natsumi Kurobe-2",
+      "tier": "2",
+      "source": "My Senpai is Annoying",
+      "image": "https://cdn.shoob.gg/images/cards/2/804a2913283cea1e382f5de14f0e3db6.png"
+    },
+    {
+      "id": 101,
+      "name": "Akane Ryuuzouji-2",
+      "tier": "2",
+      "source": "Walkure Romanze",
+      "image": "https://cdn.shoob.gg/images/cards/2/cf1b3ab38b88ca94d4e2e22a98869291e7c87743472d741eebaaf53c4cc55f1f.png"
+    },
+    {
+      "id": 102,
+      "name": "Noel Marres Ascot-2",
+      "tier": "2",
+      "source": "Walkure Romanze",
+      "image": "https://cdn.shoob.gg/images/cards/2/c92c3b7a051c2623ca67fa42d5dee344b04176befc53a5b5f366f1d0e4ccf4dd.png"
+    },
+    {
+      "id": 103,
+      "name": "Mio Kisaki-2",
+      "tier": "2",
+      "source": "Walkure Romanze",
+      "image": "https://cdn.shoob.gg/images/cards/2/0d6355d9d8a9f85fa66a505de34a93e623d6e5effc71b7b3e4223bd45f5d34cb.png"
+    },
+    {
+      "id": 104,
+      "name": "Shiva-2",
+      "tier": "2",
+      "source": "Record of Ragnarok",
+      "image": "https://cdn.shoob.gg/images/cards/2/616c2443302591664ecad28deb190c249c34781d6e2b69898fa5c6ac0f05ab4e.png"
+    },
+    {
+      "id": 105,
+      "name": "Ichiru Kuga-2",
+      "tier": "2",
+      "source": "Tsukipro The Animation",
+      "image": "https://cdn.shoob.gg/images/cards/2/6d6889984c946791eb4c4d19fbe6a40c93eed52430428f3c8f6a2c10f990b541.png"
+    },
+    {
+      "id": 106,
+      "name": "Lisa Eostre-2",
+      "tier": "2",
+      "source": "Walkure Romanze",
+      "image": "https://cdn.shoob.gg/images/cards/2/3c46e26771b3163ad4a0ed19633ca167710218439349a9e6d6a3e47903faccd2.png"
+    },
+    {
+      "id": 107,
+      "name": "Mihari Otosuna-2",
+      "tier": "2",
+      "source": "Mangaka-san to Assistant",
+      "image": "https://cdn.shoob.gg/images/cards/2/0de3d83258baea09ff3e18d413acbbf670ecfdd03ced19d7135cef35ee743ed6.png"
+    },
+    {
+      "id": 108,
+      "name": "Kotarou Azumi-2",
+      "tier": "2",
+      "source": "Tsuki ga Kirei",
+      "image": "https://cdn.shoob.gg/images/cards/2/07ef6b1a64c15f55ebedc5d2dd6f33fd24141b6b3ebfdbcd11f3b21ef643c824.png"
+    },
+    {
+      "id": 109,
+      "name": "Issei Kuga-2",
+      "tier": "2",
+      "source": "Tsukipro The Animation",
+      "image": "https://cdn.shoob.gg/images/cards/2/56fc182093605ad16a04af88c80f8b145785757ca8e3fb43dd52494466708044.png"
+    },
+    {
+      "id": 110,
+      "name": "Shuu Izumi-2",
+      "tier": "2",
+      "source": "Tsukipro The Animation",
+      "image": "https://cdn.shoob.gg/images/cards/2/d862eca87561da55664b6dd4db4aecda441946e8c614a0a6f14b98bd3ec2413a.png"
+    },
+    {
+      "id": 111,
+      "name": "Sena Kuroi-2",
+      "tier": "2",
+      "source": "Mangaka-san to Assistant",
+      "image": "https://cdn.shoob.gg/images/cards/2/8d536bb1340bdfc1e9d63ce473238df2bedc2713df6af442b6e42ff7dcf30360.png"
     }
   ]
 }

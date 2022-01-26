@@ -53,6 +53,12 @@ const GroupSchema = new Schema({
     default: false,
   },
 
+  news: {
+    type: Boolean,
+    required: false,
+    default: false
+  },
+
   normal: {
     type: Boolean,
     required: false,

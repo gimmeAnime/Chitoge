@@ -11,6 +11,9 @@ const FeatureSchema = new Schema({
   jids: {
     type: [String],
   },
+  newsId: {
+    type: String
+  }
 });
 
 // change name

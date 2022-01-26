@@ -247,6 +247,7 @@ export interface IFeature {
   feature: string;
   state: boolean;
   jids: string[];
+  newsId: string;
 }
 
 export interface IPackage {
