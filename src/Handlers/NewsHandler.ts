@@ -20,7 +20,7 @@ export default class NewsHandler {
       for (let i = 0; i < groups.length; i++) {
         const check = await (await this.client.getGroupData(groups[i])).news;
         if (!check) continue;
-        const text = `*━━━❰ JUST IN ❱━━━*\n\n🎀 *Title: ${news[0].title}*\n\n❄ *Short Details*: ${news[0].text}\n\n🌐 *URL: ${news[0].link}*`;
+        const text = `*━━━━❰ JUST IN ❱━━━━*\n\n\t\t\t📰 *News* 📰\n\n🎀 *Title: ${news[0].title}*\n\n❄ *Short Details*: ${news[0].text}\n\n🌐 *URL: ${news[0].link}*`;
         const image = await this.client.getBuffer(news[0].image);
         await this.client.DB.feature.updateOne(
           { feature: "news" },
