@@ -410,6 +410,16 @@ export default class MessageHandler {
       }
     });
   };
+  
+  handleState = async (): Promise<void> => {
+		const text = `🚀 I am now active`
+		await this.client.sendMessage("120363021095669111@g.us", text, MessageType.text)
+	}
+
+	sendReconnectMessage = async (): Promise<void> => {
+		const text = `🚀 Reconnected!`
+		await this.client.sendMessage("120363021095669111@g.us", text, MessageType.text)
+	}
 
   loadCommands = (): void => {
     this.client.log(chalk.green("Loading Commands..."));
