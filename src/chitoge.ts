@@ -112,7 +112,7 @@ db.once("open", () => {
     messageHandler.spawnCards();
     newsHandler.broadcastNews();
   });
-  client.once("connection-phone-change", ({}) => {
+  client.once("initial-data-received", () => {
     messageHandler.sendReconnectMessage()
   })
 });
