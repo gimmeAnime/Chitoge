@@ -112,7 +112,7 @@ db.once("open", () => {
     messageHandler.spawnCards();
     newsHandler.broadcastNews();
   });
-  client.once("received-pong", () => {
+  client.once("ws-close", () => {
     messageHandler.sendReconnectMessage()
   })
 });
