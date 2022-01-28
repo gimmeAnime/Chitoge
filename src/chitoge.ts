@@ -107,11 +107,12 @@ db.once("open", () => {
     start();
   });
   client.once("open", () => {
+    messageHandler.handleState()
     messageHandler.spawnPokemon();
     messageHandler.spawnCards();
     newsHandler.broadcastNews();
   });
-  client.once("connection-phone-change", ({}) => {
+  client.once("connecting", () => {
     messageHandler.sendReconnectMessage()
   })
 });
