@@ -69,36 +69,8 @@ export default class Command extends BaseCommand {
       (flag) => (parsedArgs.joined = parsedArgs.joined.replace(flag, ""))
     );
     const getOptions = () => {
-      const categories = (() => {
-        const categories = parsedArgs.flags.reduce((categories, flag) => {
-          switch (flag) {
-            case "--angry":
-              categories.push("💢");
-              break;
-            case "--love":
-              categories.push("💕");
-              break;
-            case "--sad":
-              categories.push("😭");
-              break;
-            case "--happy":
-              categories.push("😂");
-              break;
-            case "--greet":
-              categories.push("👋");
-              break;
-            case "--celebrate":
-              categories.push("🎊");
-              break;
-          }
-          return categories;
-        }, new Array<Categories>());
-        categories.length = 2;
-        if (!categories[0]) categories.push("❤", "🌹");
-        return categories;
-      })();
       return {
-        categories,
+        categories: ["🎊"],
         pack: pack[1],
         author: pack[2] || `${M.sender.username}`,
         quality,
