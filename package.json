@@ -99,7 +99,7 @@
     "translate-google": "^1.5.0",
     "ultra-lyrics": "^1.0.3",
     "vtuber-wiki": "^1.1.5",
-    "wa-sticker-formatter": "github:alensaito1/wa-sticker-formatter",
+    "wa-sticker-formatter": "4.2.0",
     "wikipedia": "^1.1.6",
     "yt-search": "^2.10.2",
     "ytdl-core": "^4.9.1"
