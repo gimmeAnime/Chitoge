@@ -36,3 +36,4 @@ declare module "@shineiichijo/marika";
 declare module "string-capitalize-name";
 declare module "node-webpmux";
 declare module "wa-sticker-formatter";
+declare module "gimme-sand";
