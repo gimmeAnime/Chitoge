@@ -6291,10 +6291,10 @@ w3c-xmlserializer@^2.0.0:
   dependencies:
     xml-name-validator "^3.0.0"
 
-wa-sticker-formatter@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/wa-sticker-formatter/-/wa-sticker-formatter-4.3.0.tgz#4c026e4a60e280dbd919d1f87a2442e05bd8505d"
-  integrity sha512-weh5jRMk/yaA3yacoeh+junm1TkvDPCfZUs8e6oXxbwp7glqnK4Gu51GjbNIUT/en+AsNe/bue85LNPRUBboWg==
+wa-sticker-formatter@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/wa-sticker-formatter/-/wa-sticker-formatter-4.3.2.tgz#88c5bbb5266c696f7a82107fc6868c46f60fda50"
+  integrity sha512-PGSHmIXn20yds3t1bbTXMw/rayjoiDI7XOuYr6b9ZuqKN0JWH75LtF2a/KXZ2ePfjDPTGOzkSH70JaAfEModeQ==
   dependencies:
     axios "^0.21.1"
     file-type "^16.5.3"
