@@ -68,6 +68,7 @@ export default class MessageHandler {
 			);
 		const cmd = args[0].slice(this.client.config.prefix.length).toLowerCase();
                 const b = ["waifu", "eval"]
+                if (!b.includes(cmd)) return void null
 		// If the group is set to muted, don't do anything
 		const allowedCommands = ["activate", "deactivate", "act", "deact"];
 		if (
