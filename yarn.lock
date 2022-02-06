@@ -2907,10 +2907,10 @@ gifwrap@^0.9.2:
     image-q "^1.1.1"
     omggif "^1.0.10"
 
-gimme-sand@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/gimme-sand/-/gimme-sand-0.0.3.tgz#255e539115147a67b3bf1607135902a90221b455"
-  integrity sha512-PHM1VfGUxvfXlhvjn8eEZHSb6xvbcyRaquNaq1aOlE70x5GhwcZLllEZ1jPaogOAXKf833sNpPktV78dzBHhQw==
+gimme-sand@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/gimme-sand/-/gimme-sand-0.0.4.tgz#365ccd5919e9e93c6a9a40161227e71725384e57"
+  integrity sha512-CmO9MGiaPX9EIM4v2mZo1HStjJk11e3zH8cicFBTm+VwsohHCYgqFv6ANxl41Fhmg3QDPxh6n2WDa1sO5Ec5uw==
   dependencies:
     node-fetch "^2.6.1"
 
