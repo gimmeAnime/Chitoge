@@ -29,11 +29,8 @@ export default class Command extends BaseCommand {
             try {
                 M.reply(
                     buffer || 'Could not fetch image. Please try again later',
-                    MessageType.image,
-                    undefined,
-                    undefined,
-                    `*🌟 Here you go.*\n`,
-                    undefined
+                    MessageType.image
+             
                 ).catch((e) => {
                     console.log(`This Error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
                     // console.log('Failed')
