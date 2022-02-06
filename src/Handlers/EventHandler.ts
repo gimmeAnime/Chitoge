@@ -74,19 +74,7 @@ export default class EventHandler {
 				.setText("message", `welcome to ${group.subject}`)
 				.setBackground("https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg")
 				.toAttachment();
-			return void (await this.client.sendMessage(
-				event.jid,
-				welcome.toBuffer(),
-				MessageType.image,
-				{
-					caption: `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
-						group.desc
-					}\n\nHope you follow the rules and have fun!\n\n*‣ ${event.participants
-						.map((jid) => `@${jid.split("@")[0]}`)
-						.join(", ")}*`,
-					contextInfo,
-				}
-			));
+			return void null
 		}
 		if (bye) {
 			const goodbye = await new Canvas.Goodbye()
@@ -107,39 +95,19 @@ export default class EventHandler {
 					"https://images.unsplash.com/photo-1554050857-c84a8abdb5e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
 				)
 				.toAttachment();
-			return void (await this.client.sendMessage(
-				event.jid,
-				goodbye.toBuffer(),
-				MessageType.image,
-				{
-					caption: `Goodbye *@${
-						event.participants[0].split("@")[0]
-					}* 👋🏻, we're probably not gonna miss you.`,
-					contextInfo,
-				}
-			));
+			return void null
 		}
 		if (promote) {
 			const text = `Congratulations *@${
 				event.participants[0].split("@")[0]
 			}*, you're now an admin.`;
-			return void this.client.sendMessage(
-				event.jid,
-				text,
-				MessageType.extendedText,
-				{ contextInfo }
-			);
+			return void null
 		}
 		if (demote) {
 			const text = `Ara Ara looks like *@${
 				event.participants[0].split("@")[0]
 			}* got demoted.`;
-			return void this.client.sendMessage(
-				event.jid,
-				text,
-				MessageType.extendedText,
-				{ contextInfo }
-			);
+			return void null
 		}
 	};
 }
