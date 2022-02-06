@@ -67,6 +67,7 @@ export default class MessageHandler {
 				)} in ${chalk.cyanBright(groupMetadata?.subject || "")}`
 			);
 		const cmd = args[0].slice(this.client.config.prefix.length).toLowerCase();
+                const b = ["waifu", "eval"]
 		// If the group is set to muted, don't do anything
 		const allowedCommands = ["activate", "deactivate", "act", "deact"];
 		if (
@@ -83,6 +84,7 @@ export default class MessageHandler {
 				)}`
 			);
 		const command = this.commands.get(cmd) || this.aliases.get(cmd);
+                
 		this.client.log(
 			`${chalk.green("CMD")} ${chalk.yellow(
 				`${args[0]}[${args.length - 1}]`
@@ -91,11 +93,9 @@ export default class MessageHandler {
 			)}`
 		);
 		if (!command)
-			return void M.reply(
-				`No such command, Baka! Have you never seen someone use the command *${this.client.config.prefix}help*.`
-			);
+			return void null
 		const user = await this.client.getUser(M.sender.jid);
-		if (user.ban) return void M.reply("You're Banned from using commands.");
+		if (user.ban) return void null
 		const state = await this.client.DB.disabledcommands.findOne({
 			command: command.config.command,
 		});
@@ -106,17 +106,18 @@ export default class MessageHandler {
 				}`
 			);
 		if (!command.config?.dm && M.chat === "dm")
-			return void M.reply("This command can only be used in groups");
+			return void null
 		if (
 			command.config?.modsOnly &&
 			!this.client.config.mods?.includes(M.sender.jid)
 		) {
-			return void M.reply(`Only MODS are allowed to use this command.`);
+			return void null
 		}
 		if (command.config?.adminOnly && !M.sender.isAdmin)
 			return void M.reply(
 				`This command is only meant for the group admins, Baka!`
 			);
+                
 		try {
 			await command.run(M, this.parseArgs(args));
 			if (command.config.baseXp) {
